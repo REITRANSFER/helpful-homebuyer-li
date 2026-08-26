@@ -2,7 +2,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { CheckCircle2, Phone } from "lucide-react"
 import config from "@/lib/config"
-import { LeadEvent } from "@/components/tracking/lead-event"
 import { ContactCTA } from "@/components/article/contact-cta"
 import { ARTICLES } from "@/lib/articles"
 
@@ -11,9 +10,6 @@ const RECOMMENDED_READS = ARTICLES.slice(0, 4)
 export default function ThankYouPage() {
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* Fire Facebook Lead event once pixel is ready */}
-      <LeadEvent />
-
       <div className="mx-auto max-w-2xl px-4 py-12 md:py-20">
         {/* Confirmation icon */}
         <div className="flex justify-center mb-6">
